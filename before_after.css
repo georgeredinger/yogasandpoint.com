@@ -1,0 +1,21 @@
+p,h1  { 
+	color: #333333;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#css-image-swap-1{
+	background:url(./after.png) no-repeat;
+}
+
+#css-image-swap-1 img {
+	-webkit-transition: opacity 2s ease-in-out;
+	-moz-transitionon: opacity 2s ease-in-out;
+	-o-transition: opacity 2s ease-in-out;
+	-metas-transition: opacity 2s ease-in-out;
+	transition: opacity 2s ease-in-easeout;
+}
+
+#css-image-swap-1 img:hover{
+	opacity:0;
+}
+

@@ -1,0 +1,36 @@
+body {
+	background-color: silver;
+}
+ul.leaders {
+	max-width: 40em;
+	padding: 0;
+	margin-right:auto;
+	overflow-x: hidden;
+list-style: none}
+ul.leaders li:before {
+	float: left;
+	width: 0;
+	white-space: nowrap;
+	content:
+	". . . . . . . . . . . . . . . . . . . . "
+	". . . . . . . . . . . . . . . . . . . . "
+	". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+	padding-right: 0.33em;
+background: silver;}
+ul.leaders span + span {
+	float: right;
+	padding-left: 0.33em;
+  background-image: url(./paper.jpg);
+}
+
+.shadow {
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	padding:10px;
+	margin-right: auto;
+	display: inline-block;
+  background-image: url(./paper.jpg);
+}

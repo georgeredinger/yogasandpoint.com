@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Upcoming Class</title>
+		<script>
+			Date.prototype.nextdow = function(dowName){
+				dowName = dowName.slice(0,3).toLowerCase();
+				for(fc=0; fc<8; fc++){
+					dobject = new Date( this.getTime(this)+(86400000 * fc) );
+					if( dobject.toGMTString().slice(0,3).toLowerCase() === dowName && fc>0 ) return dobject.toGMTString().slice(5,16);
+				}
+				return null;
+			}
+		</script>
+	</head>
+		<body>
+			this is the body
+			<script>
+				var month_names = new Array ( );
+				month_names[month_names.length] = "Jan";
+				month_names[month_names.length] = "Feb";
+				month_names[month_names.length] = "Mar";
+				month_names[month_names.length] = "Apr";
+				month_names[month_names.length] = "May";
+				month_names[month_names.length] = "Jun";
+				month_names[month_names.length] = "Jul";
+				month_names[month_names.length] = "Aug";
+				month_names[month_names.length] = "Sep";
+				month_names[month_names.length] = "Oct";
+				month_names[month_names.length] = "Nov";
+				month_names[month_names.length] = "Dec";
+
+				var currentTime = new Date();
+				var dateStr = currentTime.getDate() ;
+				dateStr = dateStr +  " " + month_names[currentTime.getMonth()] ;
+				dateStr = dateStr + " " + currentTime.getFullYear() ;
+				alert(dateStr);
+				alert( "Next Monday is:"+ new Date(dateStr).nextdow("Mon") );
+				alert( "Next Wed is:"+ new Date(dateStr).nextdow("Wed") );
+				alert( "Next Friday is:"+ new Date(dateStr).nextdow("Fri") );
+
+			</script>
+		</body>
+	</html>
+
+

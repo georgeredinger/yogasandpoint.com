@@ -102,6 +102,9 @@ img
 .stackContent p {
 	margin-left: 3em;
 }
+
+
+
 #content .stackAuto,
 #footer .stackAuto
 {
@@ -273,7 +276,7 @@ a:focus
     border-color:transparent;
     background-color:#444;
     color:#fff;
-    -pox-shadow:inset 0 0 5px #000;
+    -box-shadow:inset 0 0 5px #000;
     -moz-box-shadow:inset 0 0 5px #000;
     -khtml-box-shadow:inset 0 0 5px #000;
     -webkit-box-shadow:inset 0 0 5px #000;
@@ -332,7 +335,19 @@ a:focus
     -khtml-box-shadow:0 0 5px #999;
     -webkit-box-shadow:0 0 5px #999;
 }
-
+#column1 .stackContent
+{
+    background:#dcf5f2;
+    border:1px solid #ccc;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    -webkit-border-radius:5px;
+    -box-shadow:0 0 5px #999;
+    -moz-box-shadow:0 0 5px #999;
+    -khtml-box-shadow:0 0 5px #999;
+    -webkit-box-shadow:0 0 5px #999;
+}
 /* mockup3 & 4 */
 #content .stackAuto,
 #mockup3 #content .stack1of5,

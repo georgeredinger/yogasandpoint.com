@@ -21,4 +21,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  guard
   guard-livereload

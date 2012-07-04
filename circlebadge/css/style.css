@@ -2,7 +2,7 @@
 	position: relative;
 	margin: 0px auto;
 	font-family: 'Montserrat', serif;
-	text-transform: uppercase;
+//	text-transform: uppercase;
 	width: 500px;
 	height: 360px;
 }
@@ -20,7 +20,7 @@
 	margin: -180px 0 0 -180px;
 }
 .arc-wrapper:after{
-	content: 'A';
+	content: 'Y';
 	color: #F5E9BC;
 	line-height: 210px;
 	width: 240px;
@@ -45,36 +45,21 @@
 	font-size: 28px;
 	margin-top: 16px;
 	color: #D26A44;
-	letter-spacing: -4px;
+	letter-spacing: 4px;
 	text-shadow: 1px 1px 1px #954c04;
 }
 .arc-wrapper h4{
 	position: absolute;
+	color: #D26A44;
 	z-index: 10;
 	width: 100%;
 	font-size: 39px;
-	bottom: 10px;
-	color: #fff;
+	bottom: 27px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	font-family: 'Concert One', serif;
 }
-.arc-wrapper h4 span{
-	background: #D26A44;
-	padding: 3px;
-	width: 40px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	margin: 0 -3px 0px -3px;
-}
-.arc-wrapper h4 span.empty{
-	background: transparent;
-	width: 4px;
-}
 .example h3{
 	font-family: 'Concert One', serif;
-	text-transform: uppercase;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	color: #F8ECBF;
 	font-size: 40px;
